@@ -11,5 +11,9 @@ Exercises
 3. 03-error-first.js: Adopt Node-style error-first callbacks
 4. 04-unpredictable-zalgo.js: Show how mixed sync/async breaks ordering and try/catch
 
+Upcoming
+5. 05-deferred-execution.js: Always defer callbacks to fix Zalgo
+6. 06-callback-conventions.js: Callback-last, error-first propagation patterns
+
 Run
 `node 00-callbacks-cps/01-sync-cps.js`
