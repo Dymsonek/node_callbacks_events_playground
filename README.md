@@ -3,7 +3,7 @@ Node.js Callbacks & Events Playground
 A step-by-step playground to learn callback patterns and the EventEmitter in Node.js. Each topic lives in a numbered directory (00, 01, …) and evolves with small commits.
 
 Status
-- Implemented in 00: sync CPS, async CPS, error-first callbacks, unpredictable/Zalgo.
+- Implemented in 00: sync CPS, async CPS, error-first callbacks, unpredictable/Zalgo, callback conventions.
 
 Index
 - 00-callbacks-cps: Continuation-Passing Style basics, sync vs async, Node-style callbacks, Zalgo pitfalls.
@@ -16,7 +16,6 @@ Use Node.js to run any example file directly, for example:
 
 Next steps
 - 00-callbacks-cps/05-deferred-execution.js: Guarantee asynchronicity to fix Zalgo (setImmediate/setTimeout(0)).
-- 00-callbacks-cps/06-callback-conventions.js: Callback-last, error-first nuances, propagating errors.
 - 01-event-emitter/: EventEmitter basics and patterns (new directory).
 
 Commit style
