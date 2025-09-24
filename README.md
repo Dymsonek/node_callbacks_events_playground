@@ -7,12 +7,13 @@ Status
 
 Index
 - 00-callbacks-cps: Continuation-Passing Style basics, sync vs async, Node-style callbacks, Zalgo pitfalls.
-- 01-event-emitter (planned): Creating/using EventEmitter, error propagation, making objects observable, memory leaks, sync vs async events, EventEmitter vs callbacks, combining both.
+- 01-event-emitter: Creating/using EventEmitter, error propagation, making objects observable, sync vs async events.
 
 How to run
 Use Node.js to run any example file directly, for example:
 
 `node 00-callbacks-cps/01-sync-cps.js`
+`node 01-event-emitter/01-basic.js`
 
 Next steps
 - 00-callbacks-cps/05-deferred-execution.js: Guarantee asynchronicity to fix Zalgo (setImmediate/setTimeout(0)).
