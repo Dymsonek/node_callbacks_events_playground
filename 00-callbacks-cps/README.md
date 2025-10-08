@@ -5,6 +5,12 @@ Goals
 - Contrast synchronous CPS vs asynchronous CPS
 - Introduce Node-style callbacks (error-first, callback-last)
 
+Conventions
+- No inline comments; behavior shown via output
+- Single quotes and lowercase labels
+- Error-first, callback-last style
+- Defer when needed (queueMicrotask/setImmediate)
+
 Exercises
 1. 01-sync-cps.js: Write simple sync CPS utilities and chain them
 2. 02-async-cps.js: Make CPS async with `setImmediate`/`setTimeout`

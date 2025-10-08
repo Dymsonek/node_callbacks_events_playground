@@ -1,0 +1,17 @@
+{
+  "name": "node-callbacks-events-playground",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Minimal portfolio examples for Node.js callbacks and EventEmitter",
+  "license": "UNLICENSED",
+  "scripts": {
+    "run:00": "node 00-callbacks-cps/01-sync-cps.js && node 00-callbacks-cps/02-async-cps.js && node 00-callbacks-cps/03-error-first.js && node 00-callbacks-cps/04-unpredictable-zalgo.js && node 00-callbacks-cps/05-deferred-execution.js && node 00-callbacks-cps/06-callback-conventions.js",
+    "run:01": "node 01-event-emitter/01-basic.js && node 01-event-emitter/02-error.js && node 01-event-emitter/03-sync-vs-async.js && node 01-event-emitter/04-observable.js",
+    "run:02": "node 02-callbacks-deep-dive/01-non-cps.js && node 02-callbacks-deep-dive/02-using-sync-apis.js && node 02-callbacks-deep-dive/03-uncaught-exceptions.js",
+    "run:03": "node 03-event-emitter-advanced/01-error-propagation.js && node 03-event-emitter-advanced/02-memory-leaks.js && node 03-event-emitter-advanced/03-event-vs-callbacks.js && node 03-event-emitter-advanced/04-combining-callbacks-events.js",
+    "run:all": "npm run -s run:00 && npm run -s run:01 && npm run -s run:02 && npm run -s run:03"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
