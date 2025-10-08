@@ -16,6 +16,13 @@ Use Node.js to run any file directly:
 `node 02-callbacks-deep-dive/01-non-cps.js`
 `node 03-event-emitter-advanced/01-error-propagation.js`
 
+npm Scripts
+- `npm run run:00` — run all 00 examples
+- `npm run run:01` — run all 01 examples
+- `npm run run:02` — run all 02 examples
+- `npm run run:03` — run all 03 examples
+- `npm run run:all` — run every example end-to-end
+
 Structure
 - Each directory contains short, focused scripts.
 - No inline comments; behavior is demonstrated via output.
