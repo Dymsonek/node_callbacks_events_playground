@@ -1,9 +1,4 @@
-// Unpredictable (Zalgo) behavior: sometimes sync, sometimes async
-// This demonstrates surprising ordering and broken try/catch when callbacks
-// may fire synchronously or asynchronously depending on conditions.
-
 function doWorkUnpredictable(input, cb) {
-  // Odd -> sync, Even -> async (simulates inconsistent implementation)
   if (input % 2 === 1) {
     cb(input)
   } else {
@@ -13,25 +8,18 @@ function doWorkUnpredictable(input, cb) {
 
 console.log('ordering demo — start')
 
-// Case 1: sync callback
 console.log('A1')
 doWorkUnpredictable(1, () => {
   console.log('B1 (sync)')
 })
 console.log('C1')
 
-// Case 2: async callback
 console.log('A2')
 doWorkUnpredictable(2, () => {
   console.log('B2 (async)')
 })
 console.log('C2')
 
-// Expected output shows different ordering:
-// A1 -> B1 -> C1 (sync)
-// A2 -> C2 -> B2 (async)
-
-// try/catch demo — errors behave differently
 process.once('uncaughtException', (err) => {
   console.log('uncaughtException observed:', err.message)
 })
