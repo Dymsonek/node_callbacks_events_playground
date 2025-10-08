@@ -1,4 +1,4 @@
-console.log('uncaught exceptions — start')
+console.log('start')
 
 process.once('uncaughtException', (err) => {
   console.log('uncaughtException observed:', err.message)
@@ -33,4 +33,4 @@ asyncWorkSafe(true, (err) => {
   if (err) console.log('handled via callback:', err.message)
 })
 
-setImmediate(() => console.log('uncaught exceptions — end'))
+setImmediate(() => console.log('end'))

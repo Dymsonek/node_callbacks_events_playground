@@ -6,19 +6,19 @@ function doWorkUnpredictable(input, cb) {
   }
 }
 
-console.log('ordering demo — start')
+console.log('start')
 
-console.log('A1')
+console.log('a1')
 doWorkUnpredictable(1, () => {
-  console.log('B1 (sync)')
+  console.log('b1 (sync)')
 })
-console.log('C1')
+console.log('c1')
 
-console.log('A2')
+console.log('a2')
 doWorkUnpredictable(2, () => {
-  console.log('B2 (async)')
+  console.log('b2 (async)')
 })
-console.log('C2')
+console.log('c2')
 
 process.once('uncaughtException', (err) => {
   console.log('uncaughtException observed:', err.message)
@@ -32,7 +32,7 @@ function callAndThrowUnpredictable(sync, cb) {
   }
 }
 
-console.log('try/catch demo — sync throw:')
+console.log('sync throw:')
 try {
   callAndThrowUnpredictable(true, () => {
     throw new Error('boom-sync')
@@ -41,7 +41,7 @@ try {
   console.log('caught via try/catch:', err.message)
 }
 
-console.log('try/catch demo — async throw:')
+console.log('async throw:')
 try {
   callAndThrowUnpredictable(false, () => {
     throw new Error('boom-async')

@@ -1,8 +1,8 @@
-console.log('non-CPS examples — start')
+console.log('start')
 
 const items = [1, 2, 3]
 items.forEach((n, i) => {
-  console.log('forEach visitor', { index: i, value: n })
+  console.log('foreach visitor', { index: i, value: n })
 })
 
 let ticks = 0
@@ -12,4 +12,4 @@ const id = setInterval(() => {
   if (ticks === 3) clearInterval(id)
 }, 0)
 
-console.log('non-CPS examples — scheduled')
+console.log('scheduled')

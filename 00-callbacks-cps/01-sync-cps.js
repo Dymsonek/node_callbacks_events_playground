@@ -13,7 +13,7 @@ function toString(n, next) {
 add(2, 3, (sum) => {
   double(sum, (doubled) => {
     toString(doubled, (result) => {
-      console.log("Result:", result)
+      console.log('result:', result)
     })
   })
 })

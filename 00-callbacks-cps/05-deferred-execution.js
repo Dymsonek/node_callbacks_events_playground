@@ -22,21 +22,21 @@ function doWorkFixed(input, cb) {
   }
 }
 
-console.log('ordering demo — start')
+console.log('start')
 
-console.log('A1')
+console.log('a1')
 doWorkFixed(1, (err, value) => {
   if (err) return console.error('B1 error:', err.message)
-  console.log('B1 (deferred):', value)
+  console.log('b1 (deferred):', value)
 })
-console.log('C1')
+console.log('c1')
 
-console.log('A2')
+console.log('a2')
 doWorkFixed(2, (err, value) => {
   if (err) return console.error('B2 error:', err.message)
-  console.log('B2 (deferred):', value)
+  console.log('b2 (deferred):', value)
 })
-console.log('C2')
+console.log('c2')
 
 doWorkFixed('x', (err) => {
   if (err) console.error('expected error (deferred):', err.message)

@@ -1,6 +1,6 @@
 const { EventEmitter } = require('events')
 
-console.log('memory leaks — start')
+console.log('start')
 
 const bus = new EventEmitter()
 bus.setMaxListeners(5)
@@ -14,4 +14,4 @@ console.log('listeners on data:', bus.listenerCount('data'))
 bus.removeAllListeners('data')
 console.log('after cleanup:', bus.listenerCount('data'))
 
-console.log('memory leaks — end')
+console.log('end')

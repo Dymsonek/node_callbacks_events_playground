@@ -1,6 +1,6 @@
 const { EventEmitter } = require('events')
 
-console.log('error propagation — start')
+console.log('start')
 
 const bus1 = new EventEmitter()
 try {
@@ -13,4 +13,4 @@ const bus2 = new EventEmitter()
 bus2.on('error', (err) => console.log('handled error:', err.message))
 bus2.emit('error', new Error('handled'))
 
-console.log('error propagation — end')
+console.log('end')

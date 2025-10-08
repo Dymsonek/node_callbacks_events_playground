@@ -10,14 +10,14 @@ function toStringAsync(n, next) {
   setImmediate(() => next(String(n)))
 }
 
-console.log("start")
+console.log('start')
 
 addAsync(2, 3, (sum) => {
   doubleAsync(sum, (doubled) => {
     toStringAsync(doubled, (result) => {
-      console.log("result:", result)
+      console.log('result:', result)
     })
   })
 })
 
-console.log("after-schedule")
+console.log('after-schedule')
